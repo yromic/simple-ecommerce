@@ -50,7 +50,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal:
 1.  **Clone Repositori**
     ```bash
     git clone [https://github.com/yromic/simple-ecommerce.git](https://github.com/yromic/simple-ecommerce.git)
-    cd secure-mart
+    cd simple-ecommerce
     ```
 
 2.  **Install Dependensi**
