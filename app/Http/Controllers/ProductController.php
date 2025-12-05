@@ -15,8 +15,9 @@ class ProductController extends Controller
     public function search(Request $request)
     {
         $query = $request->input('query');
-        // Pencarian aman
-        $products = Product::where('name', 'like', "%{$query}%")->get();
+       
+        /* $products = Product::where('name', 'like', "%{$query}%")->get(); */
+         $products = Product::whereRaw("name LIKE '%$query%'")->get();
         return view('products.index', compact('products'));
     }
 
